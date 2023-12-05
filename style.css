@@ -1,0 +1,118 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+P {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+/* Image Optimizations */
+
+.equilibrium {
+  width: 32rem;
+  border-radius: 1rem;
+}
+
+.img:hover .overlay {
+  display: block;
+}
+
+.img {
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32rem;
+  height: 32rem;
+  background: hsla(178, 100%, 50%, 0.5);
+  border-radius: 1rem;
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Text */
+
+.main-text {
+  width: 32rem;
+  line-height: 1.5;
+}
+
+.second-color:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.second-color {
+  color: hsl(0, 0%, 100%);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eth-text {
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.person-img {
+  width: 3rem;
+  border: 0.2rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
