@@ -41,6 +41,7 @@ P {
 
 .img:hover .overlay {
   display: block;
+  cursor: pointer;
 }
 
 .img {
@@ -79,6 +80,7 @@ P {
 
 .second-color {
   color: hsl(0, 0%, 100%);
+  width: fit-content;
 }
 
 .stats {
@@ -115,4 +117,40 @@ P {
   width: 3rem;
   border: 0.2rem solid hsl(0, 0%, 100%);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
+
+  .equilibrium {
+    width: 24rem;
+  }
+
+  .overlay {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .second-color {
+    font-size: 1.4rem;
+    width: fit-content;
+  }
+
+  .main-text {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 1.2rem;
+    width: auto;
+  }
+
+  .second-color {
+    margin-bottom: -0.7rem;
+    font-size: 1.2rem;
+  }
 }
